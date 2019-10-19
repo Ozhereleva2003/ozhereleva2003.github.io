@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Ожерельєва Діана</title>
+	<link rel="stylesheet" href="1.css">
+	<style type="text/css">
+		p{
+			font-weight: bold;
+            font-size: 12pt;
+		}
+
+		fieldset{
+			border:2px solid red; 
+		    box-shadow:5px 5px 15px black;
+		    margin-right: 55%
+		}
+		
+	</style>
+</head>
+<body>
+	<form name="frm">
+<p>Введіть свої дані: </p>
+<fieldset> <p>Обов'язкове поле</p>
+<p>Ім'я: <input name="user" required></p>
+<p>Прізвище: <input name="name" required></p>
+<p>E-mail: <input type="email" name="email" required></p>
+</fieldset>	<br>
+
+<fieldset><p>Необов'язкове поле</p>
+	<p>Вік: <input type="age" name="age" required></p>
+	<p>Місце проживання: <input type="home" name="home" required></p>
+	   Жінка <input type="radio" name="sex" value="male" checked>
+	   Чоловік <input type="radio" name="sex" value="female">
+	   <br><br>
+	   Дата народження: <input type="date" id="date" name="date"/>
+	 <br><br>
+  </fieldset>
+   <button>Надіслати</button>
+
+
+</form>
+</body>
+</html>
